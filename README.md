@@ -1,6 +1,3 @@
-# InterGCN-ABSA
-Jointly Learning Aspect-Focused and Inter-Aspect Relations with Graph Convolutional Networks for Aspect Sentiment Analysis. COLING 2020 
-
 # Introduction
 This repository was used in our paper:  
   
