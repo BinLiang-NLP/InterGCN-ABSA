@@ -38,3 +38,8 @@ python generate_position_con_graph.py
 * Run intergcn: ```./run_intergcn.sh```
 
 * Run afgcn: ```./run_afgcn.sh```
+
+
+## Credits
+
+* Code of this repository heavily relies on [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch).
