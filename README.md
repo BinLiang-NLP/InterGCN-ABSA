@@ -42,4 +42,4 @@ python generate_position_con_graph.py
 
 ## Credits
 
-* Code of this repository heavily relies on [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch).
+* Code of this repository heavily relies on [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch), here, I would like to express my gratitude to the authors of the [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch) repository.
