@@ -42,4 +42,5 @@ python generate_position_con_graph.py
 
 ## Credits
 
-* Code of this repository heavily relies on [ASGCN](https://github.com/GeneZC/ASGCN), here, I would like to express my gratitude to the authors of the [ASGCN](https://github.com/GeneZC/ASGCN) repository.
+* The code of this repository partly relies on [ASGCN](https://github.com/GeneZC/ASGCN). 
+* Here, I would like to express my gratitude to the authors of the [ASGCN](https://github.com/GeneZC/ASGCN) repository.
