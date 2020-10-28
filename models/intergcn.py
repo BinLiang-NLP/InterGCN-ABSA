@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+# ------------------
+# @Author: BinLiang
+# @Mail: bin.liang@stu.hit.edu.cn
+# ------------------
 
 import math
 import torch
