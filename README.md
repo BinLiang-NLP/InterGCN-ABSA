@@ -5,7 +5,7 @@ This repository was used in our paper:
 <br>
 Bin Liang, Rongdi Yin, Lin Gui<sup>\*</sup>, Jiachen Du, Ruifeng Xu<sup>\*</sup>. *Proceedings of COLING 2020*
   
-Please cite our paper if you use this code. 
+Please cite our paper and kindly give a star for this repository if you use this code.
 
 ## Requirements
 
