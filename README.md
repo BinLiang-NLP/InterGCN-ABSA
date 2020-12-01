@@ -1,8 +1,7 @@
 # Introduction
 This repository was used in our paper:  
   
-[**“Jointly Learning Aspect-Focused and Inter-Aspect Relations with Graph Convolutional Networks for Aspect Sentiment Analysis”**](https://www.aclweb.org/anthology/2020.coling-main.13/)  
-<br>
+[**“Jointly Learning Aspect-Focused and Inter-Aspect Relations with Graph Convolutional Networks for Aspect Sentiment Analysis”**](https://www.aclweb.org/anthology/2020.coling-main.13/)
 Bin Liang, Rongdi Yin, Lin Gui<sup>\*</sup>, Jiachen Du, Ruifeng Xu<sup>\*</sup>. *Proceedings of COLING 2020*
   
 Please cite our paper and kindly give a star for this repository if you use this code.
