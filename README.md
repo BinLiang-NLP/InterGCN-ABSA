@@ -76,4 +76,4 @@ The BibTex of the citation is as follow:
 
 A poster of our work is as follow:
 
-<img src="/poster/poster.png" width = "80%" />
+<img src="/poster/poster.png" width = "90%" />
