@@ -66,15 +66,14 @@ The BibTex of the citation is as follow:
 ```
 
 
-## Poster
-
-A poster of our proposed framework is as follow:
-
-<img src="/poster/poster.png" width = "50%" />
-
-
-
 ## Credits
 
 * The code of this repository partly relies on [ASGCN](https://github.com/GeneZC/ASGCN). 
 * Here, I would like to express my gratitude to the authors of the [ASGCN](https://github.com/GeneZC/ASGCN) repository.
+
+
+## Poster
+
+A poster of our proposed framework is as follow:
+
+<img src="/poster/poster.png" width = "60%" />
