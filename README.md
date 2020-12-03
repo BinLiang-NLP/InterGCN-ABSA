@@ -68,9 +68,9 @@ The BibTex of the citation is as follow:
 
 ## Poster
 
-An poster of our proposed framework is as follow:
+A poster of our proposed framework is as follow:
 
-<img src="/poster/poster.png" width = "60%" />
+<img src="/poster/poster.png" width = "50%" />
 
 
 
