@@ -66,6 +66,13 @@ The BibTex of the citation is as follow:
 ```
 
 
+## Poster
+
+An poster of our proposed framework is as follow:
+
+<img src="/poster/poster.pdf" width = "60%" />
+
+
 
 ## Credits
 
