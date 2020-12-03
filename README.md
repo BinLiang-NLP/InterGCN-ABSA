@@ -74,6 +74,6 @@ The BibTex of the citation is as follow:
 
 ## Poster
 
-A poster of our proposed framework is as follow:
+A poster of our work is as follow:
 
 <img src="/poster/poster.png" width = "60%" />
