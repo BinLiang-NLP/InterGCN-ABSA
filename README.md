@@ -36,16 +36,17 @@ python generate_position_con_graph.py
 ## Training
 * Train with command, optional arguments could be found in [train.py](/train.py)
 
+```bash
 * Run intergcn: ```./run_intergcn.sh```
 
 * Run afgcn: ```./run_afgcn.sh```
+```
 
-===================================
-
+```bash
 * Run intergcn_bert: ```./run_intergcn_bert.sh```
 
 * Run afgcn_bert: ```./run_afgcn_bert.sh```
-
+```
 
 
 ## Citation
