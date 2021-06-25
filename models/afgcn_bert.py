@@ -22,7 +22,7 @@ class GraphConvolution(nn.Module):
             self.register_parameter('bias', None)
 
     def forward(self, text, adj):
-        hidden = torch.matmul(text, self.weight)
+        hidden = torch.matmul(text.float(), self.weight)
         denom = torch.sum(adj, dim=2, keepdim=True) + 1
         output = torch.matmul(adj, hidden) / denom
         if self.bias is not None:
@@ -30,15 +30,15 @@ class GraphConvolution(nn.Module):
         else:
             return output
 
-class AFGCN(nn.Module):
+class AFGCN_BERT(nn.Module):
     def __init__(self, bert, opt):
-        super(AFGCN, self).__init__()
+        super(AFGCN_BERT, self).__init__()
         self.opt = opt
         self.bert = bert
 
-        self.gc1 = GraphConvolution(2*opt.hidden_dim, 2*opt.hidden_dim)
-        self.gc2 = GraphConvolution(2*opt.hidden_dim, 2*opt.hidden_dim)
-        self.fc = nn.Linear(2*opt.hidden_dim, opt.polarities_dim)
+        self.gc1 = GraphConvolution(opt.bert_dim, opt.bert_dim)
+        self.gc2 = GraphConvolution(opt.bert_dim, opt.bert_dim)
+        self.fc = nn.Linear(opt.bert_dim, opt.polarities_dim)
         self.text_embed_dropout = nn.Dropout(0.3)
 
     def position_weight(self, x, aspect_double_idx, text_len, aspect_len):
@@ -76,7 +76,7 @@ class AFGCN(nn.Module):
         return mask*x
 
     def forward(self, inputs):
-        text_bert_indices, bert_segments_ids, aspect_bert_indices, text_indices, aspect_indices, left_indices, adj = inputs
+        text_bert_indices, bert_segments_ids, aspect_indices, left_indices, text_indices, adj = inputs
         text_len = torch.sum(text_indices != 0, dim=-1)
         aspect_len = torch.sum(aspect_indices != 0, dim=-1)
         left_len = torch.sum(left_indices != 0, dim=-1)
