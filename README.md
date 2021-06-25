@@ -40,6 +40,12 @@ python generate_position_con_graph.py
 
 * Run afgcn: ```./run_afgcn.sh```
 
+===================================
+
+* Run intergcn_bert: ```./run_intergcn_bert.sh```
+
+* Run afgcn_bert: ```./run_afgcn_bert.sh```
+
 
 
 ## Citation
