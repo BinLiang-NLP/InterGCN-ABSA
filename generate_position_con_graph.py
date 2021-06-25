@@ -63,7 +63,7 @@ def process(filename):
     lines = fin.readlines()
     fin.close()
     idx2graph = {}
-    fout = open(filename+'.graph_con_a', 'wb')
+    fout = open(filename+'.graph_inter', 'wb')
     graph_idx = 0
     for i in range(len(lines)):
         aspects, polarities, positions, text = lines[i].split('\t')
