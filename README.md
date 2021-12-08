@@ -1,5 +1,5 @@
 # Introduction
-This repository was used in our paper:  
+This repository is used in our paper:  
   
 [**Jointly Learning Aspect-Focused and Inter-Aspect Relations with Graph Convolutional Networks for Aspect Sentiment Analysis**](https://www.aclweb.org/anthology/2020.coling-main.13/)
 <br>
