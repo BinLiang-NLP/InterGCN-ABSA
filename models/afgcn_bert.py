@@ -52,7 +52,7 @@ class AFGCN_BERT(nn.Module):
             context_len = text_len[i] - aspect_len[i]
             for j in range(aspect_double_idx[i,0]):
                 weight[i].append(1-(aspect_double_idx[i,0]-j)/context_len)
-            for j in range(aspect_double_idx[i,0], aspect_double_idx[i,1]+1):
+            for j in range(aspect_double_idx[i,0], min(aspect_double_idx[i,1]+1, self.opt.max_seq_len)):
                 weight[i].append(0)
             for j in range(aspect_double_idx[i,1]+1, text_len[i]):
                 weight[i].append(1-(j-aspect_double_idx[i,1])/context_len)
@@ -68,9 +68,9 @@ class AFGCN_BERT(nn.Module):
         for i in range(batch_size):
             for j in range(aspect_double_idx[i,0]):
                 mask[i].append(0)
-            for j in range(aspect_double_idx[i,0], aspect_double_idx[i,1]+1):
+            for j in range(aspect_double_idx[i,0], min(aspect_double_idx[i,1]+1, self.opt.max_seq_len)):
                 mask[i].append(1)
-            for j in range(aspect_double_idx[i,1]+1, seq_len):
+            for j in range(min(aspect_double_idx[i,1]+1, self.opt.max_seq_len), seq_len):
                 mask[i].append(0)
         mask = torch.tensor(mask).unsqueeze(2).float().to(self.opt.device)
         return mask*x
