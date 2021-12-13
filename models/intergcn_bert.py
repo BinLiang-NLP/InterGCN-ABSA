@@ -56,7 +56,7 @@ class INTERGCN_BERT(nn.Module):
             context_len = text_len[i] - aspect_len[i]
             for j in range(aspect_double_idx[i,0]):
                 weight[i].append(1-(aspect_double_idx[i,0]-j)/context_len)
-            for j in range(aspect_double_idx[i,0], aspect_double_idx[i,1]+1):
+            for j in range(aspect_double_idx[i,0], min(aspect_double_idx[i,1]+1,self.opt.max_seq_len)):
                 weight[i].append(0)
             for j in range(aspect_double_idx[i,1]+1, text_len[i]):
                 weight[i].append(1-(j-aspect_double_idx[i,1])/context_len)
