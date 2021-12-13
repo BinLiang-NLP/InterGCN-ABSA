@@ -72,9 +72,9 @@ class INTERGCN_BERT(nn.Module):
         for i in range(batch_size):
             for j in range(aspect_double_idx[i,0]):
                 mask[i].append(0)
-            for j in range(aspect_double_idx[i,0], aspect_double_idx[i,1]+1):
+            for j in range(aspect_double_idx[i,0], min(aspect_double_idx[i,1]+1, self.opt.max_seq_len)):
                 mask[i].append(1)
-            for j in range(aspect_double_idx[i,1]+1, seq_len):
+            for j in range(min(aspect_double_idx[i,1]+1, self.opt.max_seq_len), seq_len):
                 mask[i].append(0)
         mask = torch.tensor(mask).unsqueeze(2).float().to(self.opt.device)
         return mask*x
