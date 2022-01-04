@@ -77,7 +77,7 @@ The BibTex of the citation is as follow:
 * At present, the best performance (i.e. tuning the argument of *--seed* for runing the model) of our model in each dataset is as follows:
     |Model | REST14 (Acc/F1)     | LAP14 (Acc/F1) | REST15 (Acc/F1)  | REST16 (Acc/F1) |
     | --------   | -----   |--------   | -----   |--------   |
-    | InterGCN | 82.31/74.03 | 77.90/74.41 | 81.84/66.07 |  89.88/73.53|
+    | InterGCN | 82.31/74.03 | 78.06/74.41 | 81.84/66.07 |  89.88/73.53|
 
 
 ## Credits
