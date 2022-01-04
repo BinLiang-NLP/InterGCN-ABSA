@@ -73,8 +73,8 @@ The BibTex of the citation is as follow:
 ```
 
 ## Peformance
-* Please tune the argument of *--seed* for better performance.
-* At present, the best performance (i.e. tuning the argument of *--seed* for runing the model) of our model in each dataset is as follows:
+* Please tune the parameter of *--seed* for better performance.
+* At present, the best performance (i.e. tuning the parameter of *--seed* for runing the model) of our model in each dataset is as follows:
     |Model | REST14 (Acc/F1)     | LAP14 (Acc/F1) | REST15 (Acc/F1)  | REST16 (Acc/F1) |
     | --------   | -----   |--------   | -----   |--------   |
     | InterGCN | 82.31/74.03 | 78.06/74.41 | 81.84/66.90 |  89.88/73.56|
