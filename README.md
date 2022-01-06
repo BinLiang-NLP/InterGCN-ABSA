@@ -78,7 +78,7 @@ The BibTex of the citation is as follow:
     |Model | REST14 (Acc/F1)     | LAP14 (Acc/F1) | REST15 (Acc/F1)  | REST16 (Acc/F1) |
     | --------   | -----   |--------   | -----   |--------   |
     | InterGCN | 82.31/74.69 | 78.06/74.41 | 82.84/67.49 |  89.88/74.80|
-    | InterGCN+BERT | 87.45/81.13 | 83.03/79.38 | 85.98/74.11 |  92.86/81.41|
+    | InterGCN+BERT | 87.45/81.13 | 83.03/79.38 | 85.98/75.11 |  92.86/81.41|
 
 
 ## Credits
