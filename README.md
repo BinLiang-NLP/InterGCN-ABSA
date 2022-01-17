@@ -33,6 +33,15 @@ python generate_graph_for_aspect.py
 python generate_position_con_graph.py
 ```
 
+## Preprocess
+* Please run the following command to preprocess the data:
+```bash
+python preprocess_data.py
+```
+* Please change the variables of ```path``` and ```w_path``` for different datasets.
+* The original data can be found at [orig_datasets](/orig_datasets).
+
+
 ## Training
 * Train with command, optional arguments could be found in [train.py](/train.py) \& [train_bert.py](/train_bert.py)
 
