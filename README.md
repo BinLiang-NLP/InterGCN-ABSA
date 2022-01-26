@@ -1,4 +1,4 @@
-# Introduction
+# 📜 Introduction
 This repository is used in our paper:  
   
 [**Jointly Learning Aspect-Focused and Inter-Aspect Relations with Graph Convolutional Networks for Aspect Sentiment Analysis**](https://www.aclweb.org/anthology/2020.coling-main.13/)
@@ -14,7 +14,7 @@ Please cite our paper and kindly give a star for this repository if you use this
 * SpaCy 2.0.18
 * numpy 1.15.4
 
-## Usage
+## 📋 Usage
 
 * Install [SpaCy](https://spacy.io/) package and language models with
 ```bash
@@ -33,7 +33,7 @@ python generate_graph_for_aspect.py
 python generate_position_con_graph.py
 ```
 
-## Preprocess
+## ⏳ Preprocess
 * Please run the following command to preprocess the data:
 ```bash
 python preprocess_data.py
@@ -42,7 +42,7 @@ python preprocess_data.py
 * The original data can be found at [orig_datasets](/orig_datasets).
 
 
-## Training
+## 💻 Training
 * Train with command, optional arguments could be found in [train.py](/train.py) \& [train_bert.py](/train_bert.py)
 
 
@@ -58,7 +58,7 @@ python preprocess_data.py
 
 
 
-## Citation
+## 🎯 Citation
 
 The BibTex of the citation is as follow:
 
@@ -81,7 +81,7 @@ The BibTex of the citation is as follow:
 }
 ```
 
-## Peformance
+## 📌 Peformance
 * Please tune the parameter of *--seed* for better performance.
 * At present, the best performance (i.e. only tune the parameter of *--seed* for runing the model) of our model in each dataset is as follows:
     |Model | REST14 (Acc/F1)     | LAP14 (Acc/F1) | REST15 (Acc/F1)  | REST16 (Acc/F1) |
@@ -90,13 +90,13 @@ The BibTex of the citation is as follow:
     | InterGCN+BERT | 87.45/81.13 | 83.03/79.38 | 85.98/75.11 |  92.86/81.41|
 
 
-## Credits
+## 💡 Credits
 
 * The code of this repository partly relies on [ASGCN](https://github.com/GeneZC/ASGCN) \& [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch). 
 * Here, I would like to express my gratitude to the authors of the [ASGCN](https://github.com/GeneZC/ASGCN) \& [ABSA-PyTorch](https://github.com/songyouwei/ABSA-PyTorch) repositories.
 
 
-## Poster
+## 📮 Poster
 
 A poster of our work is as follow:
 
