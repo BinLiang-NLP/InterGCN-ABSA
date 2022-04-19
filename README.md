@@ -26,11 +26,11 @@ python -m spacy download en
 ```
 * Generate aspect-focused graph with
 ```bash
-python generate_graph_for_aspect.py
+python generate_focused_graph.py
 ```
 * Generate inter-aspect graph with
 ```bash
-python generate_position_con_graph.py
+python generate_inter_graph.py
 ```
 
 ## ⏳ Preprocess
