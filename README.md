@@ -82,7 +82,7 @@ The BibTex of the citation is as follow:
 ```
 
 ## 📌 Peformance
-* Please tune the parameter of *--seed* for better performance.
+* Due to the small number of data set samples, please tune the parameter of *--seed* for better performance.
 * At present, the best performance (i.e. only tune the parameter of *--seed* for runing the model) of our model in each dataset is as follows:
     |Model | REST14 (Acc/F1)     | LAP14 (Acc/F1) | REST15 (Acc/F1)  | REST16 (Acc/F1) |
     | --------   | -----   |--------   | -----   |--------   |
